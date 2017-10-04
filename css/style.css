@@ -1,0 +1,557 @@
+/* CSS reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
+    margin:0;
+    padding:0;
+}
+html,body {
+    margin:0;
+    padding:0;
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+fieldset,img {
+    border:0;
+}
+input{
+    border:1px solid #b0b0b0;
+    padding:3px 5px 4px;
+    color:#979797;
+    width:190px;
+}
+address,caption,cite,code,dfn,th,var {
+    font-style:normal;
+    font-weight:normal;
+}
+/*
+ol,ul {
+    list-style:none;
+}
+*/
+
+caption,th {
+    text-align:left;
+}
+
+q:before,q:after {
+    content:'';
+}
+abbr,acronym { border:0;
+}
+
+/* - - - - - - - - - - - - --  */
+
+body {
+    font-family: "Avenir Next" "sans-serif";
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 2em; /* 32px */
+    font-weight: 100;
+    text-align: center;
+    padding-bottom: 0.4em;
+}
+
+h2 {
+    font-size: 1.75em; /* 28px */
+    font-weight: 600;
+    color: #43BAF7;
+    text-align: center;
+}
+
+
+h3 {
+    font-size: 1.25em; /* 20px */
+    font-weight: 600;
+    color: #8E8E8E;
+    text-align: center;
+}
+
+
+h4 {
+    font-weight: 700;
+}
+
+
+ul {
+    list-style-type: disc;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin-bottom: .5em;
+}
+
+#wrapper {
+    width: 100%; /* desktop 1280px;*/
+    min-height: 40em; /* 640px / 16px */
+    margin: 0 auto;
+}
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #000;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+#hero {
+    width: 100%;
+    min-height: 37.5em;
+    background-image: url(../img/hero_big.png);
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    text-align: center;
+
+
+}
+
+#hero figure {
+    width: 90%; /*500px = 100%*/
+    margin: 0 auto;
+    padding-top: 2em;
+
+
+}
+
+figure img {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.register-top {
+    margin-top: 2em;
+    min-width: 50%;
+    height: 3em;
+    color: #fff;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 5px;
+
+}
+
+.arrows {
+    position: relative;
+    bottom: 0;
+}
+
+#about {
+    padding: 2em 7.8125% 2em 7.8125% /*100px;*/
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+.blue-p {
+    color: #43BAF7;
+}
+
+.pink {
+    color: #FD44A3;
+    text-decoration: none;
+}
+
+#speakers {
+    background-color: #000;
+    padding: 2em 7.8125% 2em 7.8125%; /*100px;*/
+    text-align: center;
+}
+
+.individual-speaker {
+    padding: 2em 20% 1em 20%;
+    border-bottom: 1px dashed white;
+}
+
+#speakers h1 {
+    color: #fff;
+}
+
+.speaker-title {
+    color: #FD44A3;
+}
+
+.speaker-company {
+    color: #fff;
+    text-decoration: none;
+}
+
+#more {
+    margin: 1em auto;
+}
+
+#more a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#location {
+    padding: 2em 7.8125% 2em 7.8125% /*100px;*/
+}
+
+iframe {
+    width:330px;
+    height:330px;
+    border: none;
+    width: 90%;
+    height: 20.625em;
+
+}
+
+#contact {
+    background-color: #000;
+    padding: 2em 7.8125% 2em 7.8125%; /*100px;*/
+    text-align: center;
+    clear: left;
+}
+
+#contact h1 {
+    color: #fff;
+}
+
+form {
+    color: #fff;
+    font-family: "Avenir Next" "sans-serif";
+
+}
+
+.btn btn-primary {
+    background-color: #43BAF7;
+}
+
+
+#sponsors {
+    padding: 2em 7.8125% 2em 7.8125%; /*100px;*/
+    text-align: center;
+}
+
+.sp {
+    padding: 1em 2% 1em 2%;
+}
+
+
+footer {
+    width: 100%;
+    height: 13.75em; /*220px / 16 */
+    background-image: url(../img/footer-background.jpg);
+    background-repeat: repeat-x;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.register-bottom {
+    min-width: 50%;
+    height: 3em;
+    color: #fff;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-top: 5.48em;
+}
+
+
+/*Desktop Size*/
+@media (min-width: 901px)  {
+
+    #hero figure {
+    float: left;
+    width: 39.0625%; /*500px;*/
+    margin: 0 auto;
+
+
+}
+
+figure img {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+    .register-top {
+    float: right;
+    min-width: 20%;
+    height: 3em;
+    color: #fff;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+    .individual-speaker {
+    max-width: 25%;
+    float: left;
+    padding: 2em 6% 1em 6%;
+    font-size: 1em;
+    border: none;
+}
+
+    .sp-img {
+    width: 150px;
+    display:block;
+}
+
+    #more {
+        display: block;
+        position: relative;
+    clear: left;
+}
+
+    #location {
+    clear: both;
+}
+
+
+h2 {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #43BAF7;
+    padding-top: .5em;
+
+}
+
+
+h3 {
+    font-size: 1em; /* 20px */
+    font-weight: 300;
+    color: #8E8E8E;
+    padding-top: .5em;
+}
+
+
+h4 {
+    font-weight: 700;
+}
+
+    p {
+        font-size: 8.em;
+    }
+
+    iframe {
+        width: 100%;
+        height: 20.625em;
+        padding: 0;
+        margin: 0;
+    }
+
+        #hero figure {
+    width: 100%; /*500px = 100%*/
+    margin: 0 auto;
+    padding-top: 3em;
+
+}
+
+    figure img {
+    max-width: 50%;
+    margin: 0 auto;
+    float: left;
+    position: absolute;
+    left: 10%;
+
+}
+
+.register-top {
+    margin-top: 2em;
+    width: 20%;
+    height: 3em;
+    color: #fff;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 5px;
+    float: right;
+    position: absolute;
+    top: 17em;
+    right: 10%;
+}
+    .arrows {
+    clear: both;
+    position: absolute;
+    left: 48%;
+    bottom: 4em;
+}
+
+    .form-group {
+        margin: 0 auto;
+        width: 50%;
+    }
+
+    .register-bottom {
+    min-width: 20%;
+}
+
+}
+
+/*Tablet Size*/
+@media (min-width: 600px) and (max-width: 900px) {
+
+
+    #speakers {
+    padding: 2em auto 2em auto;
+    text-align: center;
+    height: 50em;
+    margin: 0 auto;
+
+}
+
+    #4speakers {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .individual-speaker {
+    width: 50%;
+    padding: 0 0 2em 0;
+    float: left;
+    font-size: 1em;
+    border: none;
+    text-align: center;
+}
+
+    .sp-img {
+    width: 50%;
+    margin: 0 auto;
+    display:block;
+
+}
+
+    #more {
+        clear: left;
+
+}
+
+    h2 {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #43BAF7;
+    padding-top: .5em;
+
+}
+
+
+h3 {
+    font-size: 1em; /* 20px */
+    font-weight: 300;
+    color: #8E8E8E;
+    padding-top: .5em;
+}
+
+
+h4 {
+    font-weight: 700;
+}
+
+    p {
+        font-size: 8.em;
+    }
+
+
+    iframe {
+    width: 100%;
+    height: 20.625em;
+    padding: 0;
+    margin: 0;
+    border: none;
+    }
+
+    #hero figure {
+    width: 100%; /*500px = 100%*/
+    margin: 0 auto;
+    padding-top: 4em;
+
+}
+
+    figure img {
+    max-width: 50%;
+    margin: 0 auto;
+    float: left;
+    position: absolute;
+    left: 5%;
+
+}
+
+.register-top {
+    margin-top: 2em;
+    min-width: 30%;
+    height: 3em;
+    color: #fff;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 5px;
+    float: right;
+    position: absolute;
+    top: 17em;
+    right: 5%;
+}
+    .arrows {
+    clear: both;
+    position: absolute;
+    left: 48%;
+    bottom: 4em;
+}
+
+    .form-group {
+        margin: 0 auto;
+        width: 70%;
+    }
+
+    .form-group btn btn-primary {
+        position: absolute;
+        left: 50%
+        color: red;
+    }
+
+    .register-bottom {
+    min-width: 20%;
+}
+
+}
